@@ -51,12 +51,12 @@ template {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
 }
 
 a:active,
 a:hover {
-    outline: 0
+    outline: 0;    
 }
 
 abbr[title] {
@@ -4249,7 +4249,9 @@ input[type=submit].btn-block {
 }
 
 .collapse {
-    display: none
+    /* display: none 
+    update */
+    
 }
 
 .collapse.in {

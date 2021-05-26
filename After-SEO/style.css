@@ -81,10 +81,8 @@ a:hover {
 }
 
 .bloc-bg-texture::before {
-        /* hidden for SEO purpose 
-    content: "";
-
-    */
+    /* hidden for SEO purpose 
+    content: "";    */
     background-size: 2px 2px;
     position: absolute;
     top: 0;
@@ -655,6 +653,11 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -757,12 +760,15 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
+    /* Accessibility update : RGBA / 2 */
+    background-color: rgba(82, 73, 50, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    /*text-decoration: underline!important;*/
+    /* accessibility recommandation */
 }
 
 .bgc-white {
@@ -775,14 +781,21 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    /* Accessibility update : RGBA / 2 */
+    background-color: #8e350b;
+
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /*color: #F3976C!important;  SEO update */
+    color: white!important;
+
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
+    /* Accessibility update : RGBA / 2 */
+    background: #8e350b;
     color: #FFFFFF!important;
 }
 
@@ -960,7 +973,9 @@ h4 {
     }
     .navbar-collapse {
         padding: 0;
+        /* update 
         overflow-x: hidden;
+        */
         -webkit-box-shadow: none;
         box-shadow: none;
     }
